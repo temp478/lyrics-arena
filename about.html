@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      /* CSS to prevent scrolling */
+      body {
+        overflow: hidden; /* Prevent scrolling */
+        height: 100vh; /* Ensure the body takes full viewport height */
+        margin: 0; /* Remove default margin */
+        font-family: 'Inter', sans-serif; /* Set font family */
+        display: flex; /* Use flexbox for centering */
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        text-align: center; /* Center text */
+        padding: 20px; /* Add padding */
+        background-color: #121212; /* Optional: dark background for contrast */
+        color: #ffffff; /* Optional: white text for readability */
+      }
+
+      .title {
+    position: absolute;
+    left: 8%;
+    font-size: 24px; /* Base font size for title */
+    margin-bottom: 20px; /* Space below title */
+    font-family: 'Arial', sans-serif; /* Replace with a custom font if desired */
+    text-transform: uppercase; /* Make text uppercase */
+    letter-spacing: 2px; /* Increase letter spacing */
+    color: #ffffff; /* Deep purple color */
+    transform-origin: top left;
+    transform: scale(2, 3);
+}
+
+
+      .bio {
+        font-size: 16px; /* Base font size for bio */
+        margin-bottom: 20px; /* Space below bio */
+        line-height: 1; /* Improve line spacing */
+        padding: 0 10%; /* Add horizontal padding */
+      }
+
+      .social-links a {
+        color: #40ff00; /* Link color */
+        text-decoration: none; /* No underline */
+        font-size: 16px; /* Base font size for links */
+        transition: color 0.3s; /* Smooth color transition */
+      }
+
+      .social-links a:hover {
+        color: #ffffff; /* Change color on hover */
+      }
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        
+        
+        .title {
+          font-size: 20px; /* Smaller title for mobile */
+          left: 0; /* Center title */
+        }
+
+        .bio {
+          width: 100%;
+          font-size: 14px; /* Smaller bio text for mobile */
+        }
+
+        .social-links a {
+          font-size: 14px; /* Smaller link size for mobile */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .title {
+          position: absolute;
+          left: 0%;
+          top: 2%;
+          font-size: 18px; /* Even smaller title for very small screens */
+        }
+
+        .bio {
+          font-size: 12px; /* Even smaller bio text for very small screens */
+        }
+
+        .social-links a {
+          font-size: 12px; /* Even smaller link size for very small screens */
+        }
+      }
+    </style>
+  </head>
+  
+<body>
+  <div class="about-container">
+    <h1 class="title">About Us</h1>
+    <div class="bio">
+      Serendipity is the occurrence of events by chance in a happy or beneficial way. It refers to the unexpected discovery of something good or valuable while not specifically searching for it. Often associated with fortunate accidents, serendipity can lead to new ideas, inventions, or relationships that enhance one's life in unforeseen ways.
+    </div>
+    <div class="social-links">
+      <a href="index.html">HOME ➡️</a>
+    </div>
+  </div>
+</body>
+</html>
